@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorium 6 - Vite & Fetch API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>Lista Artykułów</h1>
+
+    <div class="filter-section">
+        <h3>Filtruj artykuły po dacie utworzenia</h3>
+        <label for="filter-date">Pokaż artykuły utworzone od dnia:</label>
+        <input type="date" id="filter-date">
+        <button id="clear-filter">Wyczyść filtr</button>
+    </div>
+    
+    <div id="articles-list">Ładowanie artykułów...</div>
+
+    <hr>
+
+    <form id="add-article-form">
+        <h2>Dodaj nowy artykuł</h2>
+        <div>
+            <label for="title">Tytuł:</label>
+            <input type="text" id="title" required>
+        </div>
+        <div>
+            <label for="subtitle">Podtytuł:</label>
+            <input type="text" id="subtitle">
+        </div>
+        <div>
+            <label for="author">Autor:</label>
+            <input type="text" id="author" required>
+        </div>
+        <div>
+            <label for="content">Treść:</label>
+            <textarea id="content" required></textarea>
+        </div>
+        <button type="submit">Opublikuj artykuł</button>
+    </form>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

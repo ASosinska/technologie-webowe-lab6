@@ -1,0 +1,14 @@
+{
+  "name": "lab6-vite",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build --base=/technologie-webowe-lab6/",
+  "preview": "vite preview"
+},
+  "devDependencies": {
+    "vite": "^8.0.12"
+  }
+}
